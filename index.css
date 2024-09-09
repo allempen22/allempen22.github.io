@@ -286,6 +286,10 @@ p{
     font-size: 18px;
 }
 
+.text-peq{
+    margin-top: -17px;
+    margin-bottom: 53px;
+}
 
 .texto-musical .span{
     display: flex;
@@ -461,8 +465,13 @@ p{
         font-size: 16px;
     }
 
+    .text-peq{
+       margin-top: -17px;
+    }
+
     .texto-musical .span {
         font-size: 10px;
+        margin-left: 20px;
     }
 
     #content-final {
