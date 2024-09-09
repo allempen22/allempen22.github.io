@@ -1,0 +1,488 @@
+@font-face {
+    font-family: Honey;
+    src: url(Honeybee.ttf);
+}
+@font-face {
+    font-family: KG;
+    src: url(KGLoveYouThroughIt.ttf);
+}
+@font-face {
+    font-family: KG2;
+    src: url(KGLoveYouThroughIt3.ttf);
+}
+
+:root{
+    --red-color:#c52727; 
+    --tittle-font: Honey;
+    --parraf-font: KG;
+    --parraf-back-font: KG2;
+    --parraf-back-size: 22px; 
+    --parraf-size: 25px;
+    --tittle-size: 60px;
+    --color-fondo: #ffeef2;
+}
+
+body{
+    margin: 1;
+    border: 2px double #ffaac6;
+    border-width: 12px;
+}
+
+#titulo{
+    -webkit-text-stroke: 0.5px black;
+    color: #c52727;
+    font-family: var(--tittle-font);
+    font-size: var(--tittle-size);
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#o{
+    font-size: 80px;
+}
+
+#content-top{
+    background-color: var(--color-fondo);
+    padding: 20px;
+}
+
+#parrafo-central{
+    margin: auto;
+    width: 75%;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 14px;
+}
+
+p{
+    font-family: var(--parraf-font);
+    font-size: var(--parraf-size);
+    text-align: center;
+}
+
+.resaltado{
+    color: red;
+}
+
+#container-img1{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 20px;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.images{
+    position: relative; /* Necesario para que el overlay se posicione correctamente */
+    width: 25%;
+    height: 550px;
+    overflow: hidden;
+    border-top-right-radius: 15%;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 5%;
+}
+
+.images img{
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    border-radius: inherit; /* Asegura que la imagen tenga el mismo borde redondeado */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85); /* Color de fondo con transparencia */
+    opacity: 0; /* Empieza invisible */
+    transition: opacity 0.3s ease; /* Suave transición al pasar el cursor */
+    border-radius: inherit; /* Asegura que el overlay tenga el mismo borde redondeado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.images:hover .overlay {
+    opacity: 1; /* Muestra el overlay al pasar el cursor */
+}
+
+.text {
+    color: white;
+    -webkit-text-stroke: 0.1px red;
+    font-size: var(--parraf-back-size);
+    font-family: var(--parraf-back-font);
+    text-align: center;
+    padding: 20px;
+}
+
+#content-center{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.content-preguntas{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.content-preguntas2{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5px;
+}
+
+.pregunta{
+    background-color: #d699a5ce;
+    width: 450px;
+    height: 300px;
+    border-radius: 20px;
+    align-content: center;
+}
+
+.pregunta2-foto{
+    width: 450px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.pregunta2-foto img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: inherit; /* Asegura que la imagen tenga el mismo borde redondeado */
+}
+
+.pregunta3-foto{
+    width: 450px;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.pregunta3-foto img{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    border-radius: inherit; /* Asegura que la imagen tenga el mismo borde redondeado */
+
+}
+
+.respuesta{
+    width: 900px;
+    height: 300px;
+    background-color: #ffdfe5b0;
+    border-radius: 20px;
+}
+
+.respuesta2{
+    width: 900px;
+    height: 300px;
+    background-color: #ffdfe5b0;
+    border-radius: 20px;
+}
+
+.titulo-preguntas{
+    font-family: var(--parraf-font);
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+}
+
+.respuesta-pregunta{
+    font-family: var(--parraf-font);
+    text-align: justify;
+    font-size: 27px;
+    padding: 18px;
+}
+
+#content-musical{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-fondo);
+    padding: 20px;
+    gap: 20px;
+}
+
+#content-musical h1{
+    font-family: var(--tittle-font);
+    font-size: var(--tittle-size);
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin: 20px;
+}
+
+#content-musical #parraf-musica{
+    font-family: var(--parraf-font);
+    font-size: var(--parraf-size);
+    text-align: center;
+    margin-top: 0;
+}
+
+#corazon{
+    font-family: var(--tittle-font);
+    text-transform: lowercase;
+    font-size: 80px;
+    color: red;
+    
+}
+
+#content-musical2{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    gap: 10px;
+    justify-content: center;
+}
+
+.portada-musical{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    background-color: #d699a5ce;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+.portada-musical img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;    
+    border-radius: inherit; /* Asegura que la imagen tenga el mismo borde redondeado */
+}
+
+.texto-musical{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.texto-musical h3{
+    height: 30px;
+    text-align: left;
+    justify-self: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 23px;
+}
+
+.texto-musical p{
+    margin-right: auto;
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+
+.texto-musical .span{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#content-final{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#content-final h1{
+    font-family: var(--tittle-font);
+    font-size: var(--tittle-size);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#parrafo-final{
+    margin: auto;
+    width: 95%;
+    background-color: var(--color-fondo);
+    padding: 10px;
+    border-radius: 14px;
+}   
+
+#parrafo-final p{
+    width: 100%;
+}
+
+#firma{
+    display: flex;
+    flex-direction: column;
+    width: 97%;
+}
+
+#firma p{
+    margin-left: auto;
+    margin-bottom: 2px;
+    text-decoration: underline;
+}
+
+.final{
+    font-family: var(--parraf-font);
+    font-size: var(--parraf-size);
+    color: red;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 768px) {
+    :root {
+        --parraf-size: 18px;
+        --parraf-back-size: 16px;
+        --tittle-size: 20px;
+    }
+
+    body {
+        border-width: 8px;
+    }
+
+    #titulo {
+        margin-top: 20px;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    #o{
+        font-size: 35px;
+    }
+
+    #parrafo-central {
+        width: 95%;
+        padding: 10px;
+    }
+
+    #parrafo-central p {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    #container-img1 {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .images {
+        width: 60%;
+        height: 250px;
+        border-radius: 4px;
+    }
+
+    .images img {
+        height: 250px;
+    }
+
+    .overlay{
+        width: 100%;
+    }
+
+    .text{
+        font-size: 8px;
+        text-align: justify;
+    }
+
+    #content-center {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .content-preguntas, .content-preguntas2 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .pregunta, .pregunta2-foto, .pregunta3-foto, .respuesta, .respuesta2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .pregunta img, .pregunta2-foto img, .pregunta3-foto img {
+        height: 400px;
+        overflow: hidden;
+    }
+
+    .titulo-preguntas{
+        font-size: 20px;
+    }
+
+    .respuesta-pregunta {
+        font-size: 14px;
+    }
+
+    #content-musical h1{
+        font-size: 35px;
+    }
+
+    #corazon{
+        font-size: 50px;
+    }
+
+    #parraf-musica{
+        font-size: 14px;
+    }
+
+    #content-musical2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .portada-musical {
+        width: 70%;
+    }
+
+    .texto-musical h3 {
+        font-size: 20px;
+    }
+
+    .texto-musical p {
+        font-size: 16px;
+    }
+
+    .texto-musical .span {
+        font-size: 10px;
+    }
+
+    #content-final {
+        padding: 10px;
+    }
+
+    #content-final h1{
+        font-size: 35px;
+    }
+
+    #parrafo-final {
+        flex-direction: column;
+        width: 94%;
+    }
+
+    #parrafo-final p{
+        font-size: 14px;
+    }
+
+    #firma p{
+        font-size: 12px;
+    }
+
+    .final {
+        font-size: 12px;
+    }
+}
